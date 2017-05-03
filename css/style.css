@@ -1,0 +1,126 @@
+*{
+	margin:0;
+	padding: 0;
+	outline: 0;
+}
+body
+{
+	background-color: rgba(233,233,233,.5);
+}
+.container
+{
+	float: left;
+	width: 100%;
+	box-sizing: border-box;
+	padding:5px 10px;
+}
+.node
+{
+	border-bottom: 1px solid grey;
+	padding: 10px 5px;
+	float: left;
+}
+.node h2
+{
+	color: blue;
+	display: block;
+	max-width: 80%;
+	float: left;
+	clear: both;
+}
+.node .text
+{
+	width: 100%;
+	float: left;
+	clear: both;
+	display: block;
+	font:600 16px Tahoma;
+	line-height: 1.6; 
+}
+.navigation
+{
+	height: 100vh;
+	width: 300px;
+	box-sizing: border-box;
+	background-color: rgb(10,10,10);
+	padding: 0 50px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	transition-duration: 0.5s;
+}
+.navigation ul
+{
+	list-style: none;
+	margin-top: 50px;
+}
+.navigation a
+{
+	color: rgb(244,244,244);
+	font:700 18px Tahoma;
+	text-decoration: none;
+	padding:10px 0;
+	display: block;
+}
+.navigation a:hover
+{
+  text-shadow: 0 2px 2px #fff;
+}
+.listNav h2
+{
+	color: #fff;
+	border-bottom: 1px solid #fff;
+	text-align: center;
+	text-transform: uppercase;
+	font: 900 24px Tahoma;
+	padding-bottom: 4px;
+	box-shadow: inset 0 -5px 0 rgb(30,30,30);
+}
+.close
+{
+	color: #fff;
+	font: 400 21px sans-serif;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+}
+.navigation[data-status="hidden"]
+{
+  left: -300px;
+}
+.navigation[data-status="visab"] .buregerButton
+{
+	display: none;
+}
+.navigation[data-status="visab"]
+{
+  left: 0px;
+}
+.navigation[data-status="hidden"] .buregerButton
+{
+	display: block;
+}
+.buregerButton
+{
+	width: 40px;
+	height: 38px;
+	box-sizing: border-box;
+	left: 10px;
+	top:10px;
+	position: fixed;
+	background-color: rgba(10,10,10,.4);
+	border-radius: 5px;
+	cursor: pointer;
+}
+.buregerButton span
+{
+	height: 2px;
+	background-color: rgba(255,255,255,.7);
+	display: block;
+	margin-top: 8px;
+	float: left;
+	width: 80%;
+	margin-left: 10%;
+
+}
